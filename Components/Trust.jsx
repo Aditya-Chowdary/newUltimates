@@ -16,12 +16,12 @@ const Trust = () => {
   });
 
   const images = [
-    require("../assets/1.png"),
-    require("../assets/2.png"),
-    require("../assets/3.png"),
-    require("../assets/4.png"),
-    require("../assets/5.png"),
-    require("../assets/6.png"),
+    require("../assets/1.webp"),
+    require("../assets/2.webp"),
+    require("../assets/3.webp"),
+    require("../assets/4.webp"),
+    require("../assets/5.webp"),
+    require("../assets/6.webp"),
   ];
 
   const screenWidth = Dimensions.get("window").width;

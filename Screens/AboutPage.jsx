@@ -9,8 +9,8 @@ import {
 import React from "react";
 import { useFonts } from "expo-font";
 import HauoraRegular from "../assets/Fonts/Hauora-Regular.ttf";
-import A1 from "../assets/AboutPageImages/A1.jpeg";
-import A2 from "../assets/AboutPageImages/A2.jpeg";
+import A1 from "../assets/AboutPageImages/A1.webp";
+import A2 from "../assets/AboutPageImages/A2.webp";
 import Header from "../Screens/Header";
 import ThreeCards from "../Components/ThreeCards";
 import Trust from "../Components/Trust";

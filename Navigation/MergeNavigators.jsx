@@ -142,7 +142,6 @@ const TabNavigator = () => {
                 component={Windows}
                 options={{ headerShown: false }}
               />
-            
             </Stack.Navigator>
           )}
         </Tab.Screen>
@@ -150,7 +149,6 @@ const TabNavigator = () => {
           name="Services"
           options={{
             tabBarIcon: ({ focused }) => (
-             
               <BottomIcon
                 iconName="Services"
                 iconImage={focused ? serviceIconActive : serviceIconInactive}
@@ -201,7 +199,6 @@ const TabNavigator = () => {
                 component={Windows}
                 options={{ headerShown: false }}
               />
-             
             </Stack.Navigator>
           )}
         </Tab.Screen>
@@ -273,7 +270,6 @@ const TabNavigator = () => {
           name="Contact"
           options={{
             tabBarIcon: ({ focused }) => (
-           
               <BottomIcon
                 iconName="Contact"
                 iconImage={focused ? contactIconActive : contactIconInactive}

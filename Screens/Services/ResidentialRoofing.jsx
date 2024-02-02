@@ -9,13 +9,16 @@ import {
   Modal,
   ScrollView,
   Linking,
+  ActivityIndicator,
 } from "react-native";
 
 import { WebView } from "react-native-webview";
+
 import { useFonts } from "expo-font";
 import HauoraRegular from "../../assets/Fonts/Hauora-Regular.ttf";
 import Header from "../Header";
-import owken from "../../assets/Pdf/owken.pdf";
+const owken = require("../../assets/Pdf/owken.pdf");
+
 import res1 from "../../assets/ServicePageImages/res1.jpeg";
 import res2 from "../../assets/ServicePageImages/res2.jpeg";
 import sh1 from "../../assets/ServicePageImages/sh1.png";
@@ -27,12 +30,14 @@ import sh6 from "../../assets/ServicePageImages/sh6.png";
 import { useNavigation } from "@react-navigation/native";
 import BackNavigation from "../../Components/BackNavigation";
 import Trust from "../../Components/Trust";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function ResidentialRoofing() {
   let [fontsLoaded] = useFonts({
     Hauora: HauoraRegular,
   });
-
+  const pdfUrl =
+    "https://ultimatesroofing.com/static/media/Owens%20Corning%20Oakridge.d85cef2daac47536f7a8.pdf?v=1408107132000";
   const navigation = useNavigation();
   const [showPdf, setShowPdf] = useState(false);
 
@@ -258,7 +263,6 @@ export default function ResidentialRoofing() {
             style={{
               backgroundColor: "#B22335",
               paddingVertical: 12,
-              paddingHorizontal: 8,
               width: "35%",
               marginBottom: 12,
               justifyContent: "center",
@@ -281,25 +285,29 @@ export default function ResidentialRoofing() {
 
           <Modal visible={showPdf} onRequestClose={togglePdf}>
             <View style={{ flex: 1 }}>
-          
               <TouchableOpacity
                 style={{
                   position: "absolute",
-                  top: 20,
-                  right: 20,
+                  top: 10,
+                  right: 10,
                   zIndex: 1,
                 }}
                 onPress={togglePdf}
               >
-                <Text style={{ color: "white", fontSize: 18 }}>Close</Text>
+                <MaterialCommunityIcons
+                  name="close-circle-outline"
+                  size={24}
+                  color="black"
+                />
               </TouchableOpacity>
 
               {/* PDF Viewer */}
               <WebView
                 source={{
-                  uri: `https://docs.google.com/gview?embedded=true&url=${owken}`,
+                  uri: `https://drive.google.com/viewerng/viewer?embedded=true&url=${pdfUrl}`,
                 }}
                 javaScriptEnabled={true}
+                scrollEnabled={true}
                 domStorageEnabled={true}
                 startInLoadingState={true}
                 renderLoading={() => (
@@ -310,7 +318,7 @@ export default function ResidentialRoofing() {
                       alignItems: "center",
                     }}
                   >
-                    {/* You can add a loading indicator here if needed */}
+                    <ActivityIndicator></ActivityIndicator>
                     <Text>Loading PDF...</Text>
                   </View>
                 )}
@@ -354,7 +362,6 @@ export default function ResidentialRoofing() {
                 fontFamily: "Hauora",
               }}
             >
-              {" "}
               • Innovative Design
             </Text>
             <Text
@@ -435,7 +442,7 @@ export default function ResidentialRoofing() {
               justifyContent: "center",
               alignItems: "center",
             }}
-            // onPress={() => navigation.navigate("FreeEstimate")}
+            onPress={handleLinkPress}
           >
             <Text
               style={{
@@ -445,7 +452,6 @@ export default function ResidentialRoofing() {
                 fontWeight: "400",
                 letterSpacing: 0.24,
               }}
-              onPress={handleLinkPress}
             >
               Learn More
             </Text>

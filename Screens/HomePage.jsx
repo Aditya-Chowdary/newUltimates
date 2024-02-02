@@ -5,7 +5,7 @@ import {
   Text,
   View,
   TouchableOpacity,
-  SafeAreaView,
+  SafeAreaView,Platform
 } from "react-native";
 import { useFonts } from "expo-font";
 import HauoraRegular from "../assets/Fonts/Hauora-Regular.ttf";
@@ -26,9 +26,9 @@ export default function HomePage() {
   });
 
   const images = [
-    require("../assets/c1.jpeg"),
-    require("../assets/c2.jpeg"),
-    require("../assets/c3.jpeg"),
+    require("../assets/c1.webp"),
+    require("../assets/c2.webp"),
+    require("../assets/c3.webp"),
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function HomePage() {
           <View>
             <SliderBox
               images={images}
-              sliderBoxHeight={200}
+              SliderBoxHeight={200}
               SliderBoxWidth={"100%"}
               dotColor="white"
               inactiveDotColor="grey"

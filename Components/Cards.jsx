@@ -16,15 +16,15 @@ const Cards = () => {
   return (
     <View style={styles.container}>
       <Card
-        imageSource={require("../assets/card1.jpeg")}
+        imageSource={require("../assets/card1.webp")}
         title="100% Trusted"
       />
       <Card
-        imageSource={require("../assets/card2.jpeg")}
+        imageSource={require("../assets/card2.webp")}
         title="15 Years Experience"
       />
       <Card
-        imageSource={require("../assets/card3.jpeg")}
+        imageSource={require("../assets/card3.webp")}
         title="Customer Support"
       />
     </View>

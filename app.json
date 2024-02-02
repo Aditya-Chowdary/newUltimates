@@ -1,20 +1,18 @@
 {
   "expo": {
-    "name": "ultimates-roofing-solution-application",
-    "slug": "ultimates-roofing-solution-application",
-    "privacy": "public",
-    "description": "This is a complete solution for your roofing",
+    "name": "Ultimates-Roofing-Solution-Application",
+    "slug": "ultimates-roofing-solution",
     "version": "1.0.0",
-    "orientation": "portrait", 
+    "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
-    
-    "assetBundlePatterns": [
-      "**/*"
+ "plugins": [
+      "@config-plugins/react-native-pdf",
+      "@config-plugins/react-native-blob-util"
     ],
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "UltimatesRoofingLLC"
+      "supportsTablet": true
     },
     "android": {
       "icon": "./assets/icon.png",
@@ -22,21 +20,22 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.viswa_aditya.ultimatesroofingsolutionapplication"
+      "package": "com.viswa_aditya.UltimatesNativeApp"
     },
     "web": {
       "favicon": "./assets/UltimatesLogo.png"
     },
     "extra": {
       "eas": {
-        "projectId": "2318af7b-4f1f-4c0a-9072-c859c8c060c5"
+        "projectId": "42a0563b-43ee-4928-b366-534869afba68"
       }
     },
+    "owner": "viswachowdary",
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/2318af7b-4f1f-4c0a-9072-c859c8c060c5"
+      "url": "https://u.expo.dev/42a0563b-43ee-4928-b366-534869afba68"
     }
   }
 }

@@ -45,17 +45,17 @@ const ContactPage = () => {
         <BackNavigation title={"Contact Us"} />
         <View style={styles.contactContainer}>
           <ContactCard
-            icon="ios-call"
+            icon="call-outline"
             title="614-602-7980"
             onPress={handleCardClick}
           />
           <ContactCard
-            icon="ios-mail"
+            icon="mail-outline"
             title="admin - hrroofs@ultimatesolutionsit.com"
             subtitle="sales - roofs@ultimatesolutionsit.com"
           />
           <ContactCard
-            icon="ios-location"
+            icon="location"
             title="Ultimates Roofing LLC,"
             subtitle="Columbus, Ohio"
           />

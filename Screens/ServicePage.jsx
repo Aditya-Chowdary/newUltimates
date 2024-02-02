@@ -8,14 +8,14 @@ import {
   Modal,
 } from "react-native";
 import React, { useState } from "react";
-import service1 from "../assets/ServicePageImages/our-service1.jpg";
-import service2 from "../assets/ServicePageImages/our-service2.jpg";
-import service3 from "../assets/ServicePageImages/our-service3.jpg";
-import service4 from "../assets/ServicePageImages/our-service4.jpg";
-import service5 from "../assets/ServicePageImages/our-service5.jpg";
+import service1 from "../assets/ServicePageImages/our-service1.webp";
+import service2 from "../assets/ServicePageImages/our-service2.webp";
+import service3 from "../assets/ServicePageImages/our-service3.webp";
+import service4 from "../assets/ServicePageImages/our-service4.webp";
+import service5 from "../assets/ServicePageImages/our-service5.webp";
 import { useNavigation } from "@react-navigation/native";
 
-import Header from "../Screens/Header";
+import Header from "./Header";
 import arrow from "../assets/ServicePageImages/Arrow.png";
 import Trust from "../Components/Trust";
 import ButtonCarousel from "../Components/ButtonCarousel";

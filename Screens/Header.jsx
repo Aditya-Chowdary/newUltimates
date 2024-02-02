@@ -113,7 +113,7 @@ export default function Header(props) {
                 {/* Form */}
                 <TouchableOpacity onPress={closeModal} style={styles.closeIcon}>
                   <MaterialCommunityIcons
-                    name="close"
+                    name="close-circle-outline"
                     size={24}
                     color="black"
                   />
@@ -165,7 +165,7 @@ export default function Header(props) {
 
                 <TouchableOpacity onPress={closeModal} style={styles.closeIcon}>
                   <MaterialCommunityIcons
-                    name="close"
+                    name="close-circle-outline"
                     size={24}
                     color="black"
                   />

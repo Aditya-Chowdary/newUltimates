@@ -59,7 +59,7 @@ export default function AssistButton() {
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <TouchableOpacity onPress={closeModal} style={styles.closeButton}>
-              <MaterialCommunityIcons name="close" size={24} color="black" />
+              <MaterialCommunityIcons name="close-circle-outline" size={24} color="black" />
             </TouchableOpacity>
             {showForm ? (
               <>

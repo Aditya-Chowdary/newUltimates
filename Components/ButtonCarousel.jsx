@@ -9,7 +9,7 @@ import {
   Modal,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import Icon from "@expo/vector-icons/Ionicons";
+import { Feather } from '@expo/vector-icons';
 import { Video } from "expo-av";
 
 const ButtonCarousel = () => {
@@ -86,15 +86,15 @@ const ButtonCarousel = () => {
         </View>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <TouchableOpacity onPress={toLeft}>
-            <Icon
-              name="md-arrow-back-circle-outline"
+            <Feather
+              name="arrow-left-circle"
               size={30}
               style={{ color: "#3a3a3a", margin: 0 }}
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={toRight}>
-            <Icon
-              name="md-arrow-forward-circle-outline"
+            <Feather
+              name="arrow-right-circle"
               size={30}
               style={{ color: "#3a3a3a", margin: 0 }}
             />
@@ -143,7 +143,7 @@ const ButtonCarousel = () => {
           <View style={styles.modalContent}>
             {/* Close Icon */}
             <TouchableOpacity style={styles.closeIcon} onPress={closeModal}>
-              <Ionicons name="md-close" size={24} color="black" />
+              <Ionicons name="close-circle-outline" size={24} color="black" />
             </TouchableOpacity>
 
             {/* Video Player */}
